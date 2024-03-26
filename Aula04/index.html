@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<center>
+<!--body bgcolor="deeppink" text="pink"-->
+
+<body bgcolor="lightblue" text="black"></body>
+    <h2>Formulários - 26/03</h2>
+
+    <!--Primeiro formulário: -->
+    <form action="dados.php" method="post">
+
+    <h1>Login</h1>
+
+    <p>Usuário:
+        <input type="text" name="usuario" size="12" maxlength="9" value="" placeholder="usuario"> <br> <br>
+    Senha:
+    <input type="password" name="senha" size="12" maxlength="10" value="" placeholder="senha">
+    </p>
+
+        <h4>Selecione as matérias:</h4>
+        <p>
+            <input type="checkbox" name="matéria" value="AW1"> AW1 (Web) <br>
+            <input type="checkbox" name="matéria" value="LP2"> LP2 (Java)<br>
+            <input type="checkbox" name="matéria" value="LP3"> LP3 (Python) <br>
+            <input type="checkbox" name="matéria" value="TDS"> TDS (Teoria de sistemas) <br>
+            <input type="checkbox" name="matéria" value="TPO"> TPO (Tópicos profissionais)
+        </p>
+
+        <h4>Selecione o turno:</h4>
+        <p>
+            <input type="radio" name="turno" value="matutino"> Matutino 
+            <input type="radio" name="turno" value="vespertino"> Vespertino
+            <input type="radio" name="turno" value="noturno"> Noturno 
+        </p>
+        
+        <p>Selecione o professor:
+        <select name="Professores" id="" >
+            <option value="Latorre">Latorre</option>
+            <option value="Motta">Motta</option>
+            <option value="Luk">Luk</option>
+            <option value="Quirino">Quirino</option>
+        </select>
+        </p>
+
+        <p>Faça o seu comentário à respeito do professor selecionado:</p>
+        <textarea name="" id="" cols="30 rows=5" placeholder="comentário"></textarea> <br> <br>
+
+        <p>Avalie o professor selecionado:</p>
+        <span>0</span>
+        <input id="percent" type="range" 
+        Oninput="getElementById('exibePercent').innerHTML=this.value;" name="nota" min="0" max="10" value="0"> 
+        <span id="exibePercent">10</span> 
+        <br> <br>
+
+        <input type="submit" name="enviar" value="ENVIAR"> 
+        <input type="reset" value="LIMPAR">
+        <br>
+    </form>
+
+</body>
+</center>
+</html>
