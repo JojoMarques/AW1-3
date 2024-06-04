@@ -1,0 +1,29 @@
+h1{
+    background-color: rgb(141, 205, 227);
+    font-family:Verdana;
+    font-size: 30;
+    color: rgb(255, 255, 255);
+    text-align:center ;
+    margin: 50px;
+    padding: 25px;
+    border-radius: 100px;
+    border: solid;
+    border-color:rgb(63, 154, 154);
+    width: 80%;
+    height: 20%;
+}
+
+body{
+    background-color:lightcyan;
+    display: flex;
+    justify-content: center;
+}
+
+.cor1{
+    background-color: hsl(90,100%,50%);
+}
+
+.cor2{
+    background-color: hsl();
+}
+
