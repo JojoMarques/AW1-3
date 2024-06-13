@@ -1,0 +1,39 @@
+h1{
+    color: red;
+}
+h1{
+    color:rgb(28, 119, 147);
+    text-align: center;
+    background-color: rgb(150, 193, 211);
+    border: solid;
+    border-color: rgb(28, 119, 147);
+    border-radius: 100px;
+    padding: 20px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(201, 233, 247);;
+}
+p{
+    color: rgb(7, 80, 102);
+}
+a{
+    color:rgb(28, 119, 147);
+    border-radius:100px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.pilotos{
+    color: red;
+    font-size: 20px;
+
+}
+.alterar{
+    color: rgb(253, 22, 95);
+    font-size: 30px;
+}
+.tecnico{
+    color: blue;
+}
