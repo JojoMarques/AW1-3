@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(164, 214, 255);
+    color: rgb(7, 71, 122);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+marquee{
+    background-color: rgb(112, 191, 255);
+    padding: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    width: 20%;
+    height: 15%;
+    border-radius: 30px;
+}
+*{
+    margin: 10;
+}
+.efeito1{
+    background-color:rgb(200, 153, 214) ;
+    padding: 20px;
+}
+p{
+    color: rgb(7, 71, 122);
+    background-color:rgb(112, 191, 255) ;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/*EFEITOS VISUAIS:*/
+
+/*mudar a cor*/
+.mudarCor:hover{
+    background-color:rgb(78, 164, 240) ;
+    border: solid;
+    border-color: rgb(18, 144, 255) ;
+    color: white;
+}
+
+/*crescer*/
+.grow:hover{
+    font-size: 20px;
+    transform: scale(1.3);
+}
+
+/*diminuir*/
+.shrinka:hover{
+    color: rgb(7, 71, 122);
+    background-color:rgb(112, 191, 255) ;
+    padding: 20px;
+    transform: scale(0.7);
+}
+
+/*rodar*/
+.rotate:hover{
+    color: rgb(7, 71, 122);
+    background-color:rgb(112, 191, 255) ;
+    padding: 20px;
+    transform: rotate(-30deg);
+}
+
+/*opacidade*/
+.opacidade:hover{
+    opacity:0.4;
+}
+
+/*arredondar*/
+.arredondar:hover{
+    border-radius: 100%;
+}
+
+/*sombreamento*/
+.sombreamento:hover{
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.342);
+}
+
+.border:hover
+{
+    box-shadow: inset 0 0 0 15px #53a7ea;
+}
+
+.borrar:hover{
+    filter: blur(5px);
+    transition: 1s ease;
+}
+/*transições*/
+
+.elem:hover {
+    background: #53a7ea;
+    width: 300px;
+    height: 150px;
+    animation: moveToRight 5s ease-in-out;
+    animation-delay: 5ms;
+  }
+
+  @keyframes moveToRight {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(300px);
+    }
+  }
+
+  .transicao:hover {
+    animation: changeBackgroundColor 7s infinite; /* propriedade de animação */
+  }
+  @keyframes changeBackgroundColor {
+    0% {
+      background-color: #53a7ea;
+    }
+    50% {
+      background-color: #db77ce;
+    }
+    100% {
+      background-color: #8945e0;
+    }
+  }
+
