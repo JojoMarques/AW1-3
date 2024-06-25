@@ -1,0 +1,81 @@
+h1{
+    color: rgb(64, 133, 133);
+    padding: 20px;
+    width: 20%;
+    height: 30%;
+    background-color: rgb(138, 187, 187);
+    border-radius: 30px;
+    text-align: center;
+}
+body{
+    background-color: rgb(183, 214, 214);
+    
+}
+div{
+    justify-content: center;
+    display: flex;
+}
+
+p{
+    color: rgb(64, 133, 133);
+    background-color: rgb(138, 187, 187);
+    padding: 20px;
+    width: 5%;
+    height: 10%;
+}
+/*animaton alternate*/
+.animacao-1{
+    animation-duration: 7s;
+    animation-name: Jojo;
+    animation-iteration-count: infinite;
+    animation-duration: alternate;
+}
+@keyframes Jojo {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+to{
+    margin-left: 0%;
+    width: 100%;
+}
+}
+/*animaton fill mode*/
+.animacao-2{
+    width: 400px;
+    animation-name: text;
+    animation-duration: 5s;
+}
+#A{
+    animation-fill-mode: none;
+    background-color: rgb(153, 138, 187);
+    color: rgb(47, 29, 90);
+}
+#B{
+    animation-fill-mode: forwards;
+    background-color: rgb(187, 138, 184);
+    color: rgb(105, 8, 99);
+}
+#C{
+    animation-fill-mode: backwards;
+    animation-delay: 3s;
+    background-color: rgb(138, 187, 146);
+    color: rgb(16, 73, 26);
+}
+#D{
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    background-color: rgb(187, 164, 138);
+    color: rgb(109, 71, 28);
+}
+@keyframes text {
+    from{
+        margin-left: 0%;
+        
+    }
+    to{
+        margin-left:60%;
+        background-color: rgb(138, 187, 187);
+        color: rgb(64, 133, 133);
+    }
+}
