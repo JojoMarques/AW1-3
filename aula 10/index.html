@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - JavaScript</title>
+    <script>
+        function funcao(){
+            alert("alerta");
+        }
+        function funcao2(){
+            var x;
+            var r =confirm("Escolha um valor!");
+            if(r){
+                x = "OK"
+            }
+            else{
+                x = "Cancelar";
+            }
+            document.write("Você pressionou "+x)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick=funcao() value="Exibir um alerta">
+    <button onclick=funcao2()>cliqe aqui</button>
+    <p id="demo"></p>
+</body>
+</html>
