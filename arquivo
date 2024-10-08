@@ -1,0 +1,78 @@
+
+#Adicionar arquivo JS no HTML:
+
+<script src="arquivo.js"></script>
+
+#Subtraindo datas em JS:
+// Solicitar a data do usuário via prompt
+const dataUsuario = prompt("Digite uma data (YYYY-MM-DD):");
+
+// Converter a entrada para um objeto Date
+const dataReferencia = new Date(dataUsuario);
+
+// Obter a data atual
+const dataAtual = new Date();
+
+// Calcular a diferença em milissegundos
+const diferenca = dataAtual - dataReferencia;
+
+// Converter para dias (1000 ms/s * 60 s/min * 60 min/h * 24 h/dia)
+const diferencaDias = diferenca / (1000 * 60 * 60 * 24);
+
+console.log(`A diferença entre a data inserida e a data atual é de ${diferencaDias.toFixed(0)} dias.`);
+//toFixed limita o número de casas decimais
+
+#Alterando cor de fundo com condição:
+
+const body = document.querySelector('body');
+
+condição x {
+  mensagem = “bom dia”;
+  body.style.backgroundColor = "beige";
+}
+
+document.write(mensagem);
+//ou
+section.innerHTML = mensagem;
+section.innerHTML+=`<br>mensagem: ${mensagem}`;
+
+// no HTML, tem que ter a tag section (pq aí esse JS joga lá)
+
+#Chamando Função JS ao clicar em botão no HTML:
+
+HTML:
+<input type="button" onclick=funcao() value="Exibir um alerta">
+    <button onclick=funcao2()>cliqe aqui</button>
+JS:
+function funcao(){
+            alert("alerta");
+        }
+function funcao2(){
+            var x;
+            var r =confirm("Escolha um valor!");
+            if(r){
+                x = "OK"
+            }
+            else{
+                x = "Cancelar";
+            }
+            document.write("Você pressionou "+x);
+}
+
+
+#Importantes feitos em aula:
+
+var largura = window.innerWidth; 
+var linguagem = navigator.language;
+var plataforma = navigator.platform;
+var largura = window.innerWidth;
+document.getElementById('resultado').innerHTML = "Largura da tela = " + largura + "px";
+// joga esse texto lá no elemento que HTML que tem o id = resultado 
+
+
+function pegar_geolocalizacao() {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var geolocalizacao = "Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude;
+                document.getElementById('resultado').innerHTML = "Geolocalização da Página = " + geolocalizacao;
+            });
+        }
