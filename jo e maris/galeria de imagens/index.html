@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de imagens</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header id="header">
+        <div>
+            <h1>Galeria de imagens</h1>
+            <h3 id="bem_vindo"></h3>
+        </div>
+
+        <img id="foto_gato_pequeno" height="100px" src='imagens/gato1.jpeg' alt="foto de gato">
+    </header>
+
+    <section>
+
+        <h2>Clique para mudar para a próxima foto!</h2>
+        <div id="foto_gato_container">
+            <button id="botao_muda_gato" class="botao" onclick="muda_foto()">Mudar foto</button>
+            <img id="foto_gato" width="400px" src='imagens/gato1.jpeg' alt="foto de gato">
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <button id="botao_credito" class="botao borda" onclick="mostra_credito()">mostrar creditos</button>
+
+        <h4 id="credito"></h4>
+    </footer>
+
+    <!-- JavaScript EXTERNO -->
+    <script src="app.js"></script>
+</body>
+</html>
